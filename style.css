@@ -96,25 +96,52 @@ a:hover {
 
 /* ---------- Header / Profile ---------- */
 
+/* ---------- Header / Profile ---------- */
+
 .profile {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 2rem;
+  display: flex;
+  /* Flex layout for image + text */
   align-items: center;
-  margin-top: 3rem;
+  /* Vertically center image with text */
+  gap: 1.5rem;
+  /* Space between image and text */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .profile img {
-  width: 180px;
-  height: 180px;
+  width: 120px;
+  /* smaller professional size */
+  height: 120px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.profile .title {
-  font-size: 1.1rem;
+.profile-text h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.profile-text p {
+  margin: 0.3rem 0;
   color: var(--muted);
+  line-height: 1.5;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
 }
 
 /* ---------- Sections ---------- */
