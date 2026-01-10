@@ -14,6 +14,47 @@
 
 <h2>Seth's Professional Resources</h2>
 <ul>
-    <li>CV: online version available <a href="cv.html"> here</a> and a PDF here: <a
-            href="resources/SGerberding_CV__Dec__2023_.pdf">SGerberding_CV_2024</a>.</li>
+    <li>Complete CV of academic and professional career: online version available <a href="cv.html"> here</a> and a PDF
+        here: <a href="resources/SGerberding_CV_Jan_2026.pdf">SGerberding_CV_2024</a>.</li>
+</ul>
+
+
+<h2>Open-source Projects I've contributed to:</h2>
+<ul>
+    <li>
+        <strong>Ryujin</strong> — A high-performance, high-order collocation-type finite element solver
+        for conservation laws, including the compressible Navier–Stokes and Euler equations.
+        (<a href="https://github.com/conservation-laws/ryujin" target="_blank" rel="noopener">GitHub</a>)
+        <ul>
+            <li>Implemented implicit-explicit (IMEX) method for the Korteweg de-Vries equation. Included implementing
+                high-order time integration
+                techniques, discrete dispersive operators, and test problems. See "A High-Order IMEX Method for
+                Generalized Korteweg–De Vries Equations" on my <a href="selected_works.html">list of
+                    publications</a> for theoretical details. </li>
+            <li>Implemented implicit-explicit (IMEX) for the Serre-Green-Naghdi equaitons. Included implementing a
+                parallelized,
+                matrix-free elliptic solver which used a geometric multi-grid preconditioner, hyperbolic flux, and test
+                cases. In the process of a writing a paper for this project. </li>
+            <li>Implemented methods for the Korteweg de-Vries equation and the Serre-Green-Naghdi equations. (Note that
+                these methods may not available in the release version; contact the developers or myself if you desire
+                access to the code.)</li>
+        </ul>
+    </li>
+
+    <li>
+        <strong>ExactPack</strong> — An open-source verification and validation library for generating
+        exact and semi-analytic solutions to benchmark problems in computational physics
+        (LA-CC-14-047, C23033).
+        (<a href="https://github.com/lanl/ExactPack" target="_blank" rel="noopener">GitHub</a>)
+        <ul>
+            <li>Developed semi-analytic solutions agnostic to the equation of state and other problem parameters for the
+                Noh Problem.</li>
+            <li>Integrated new solvers into the existing ExactPack framework (see <a
+                    href="https://github.com/lanl/ExactPack/tree/master/exactpack/solvers/nohblackboxeos">nohblackboxeos</a>)
+            </li>
+            <li>Authored technical reports and a peer-reivew article; see my <a href="selected_works.html">list of
+                    publications</a>, specifically "Semi-Analytic Solutions to the Noh Problem with a Black Box Equation
+                of State."</li>
+        </ul>
+    </li>
 </ul>
