@@ -1,67 +1,91 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
 
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seth J. Gerberding</title> <!-- Title that appears in tab -->
+    <title>Seth J. Gerberding | Mathematics Ph.D. Student</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="selected_works.html">Selected Works</a></li>
-            <li> <a href="software.html">Software & Codes</a></li>
-            <li> <a href="for_professionals.html">For Employers</a></li>
-            <li> <a href="writings.html">Wrtings, Language, and Literature</a></li>
-        </ul>
+
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html">Home</a>
+            <a href="selected_works.html">Research</a>
+            <a href="software.html">Software</a>
+            <a href="writings.html">Writings, Language, and Literature</a>
+            <a href="for_professionals.html">For Professionals</a>
+        </div>
     </nav>
 
-    <h1>
-        Seth Gerberding <br> Mathematics Ph.D. Student at Texas&nbsp;A&amp;M&nbsp;University<sup><a
-                href="#footnote">1</a></sup>
-    </h1>
+    <div class="container">
 
+        <h1>Seth Gerberding</h1>
+        <p><strong>Mathematics Ph.D. Student at Texas A&M University</strong></p>
 
-    <h2>About</h2>
-    <ul>
-        <li>Year: Sixth </li>
-        <li>Research Interests: Numerical Analysis, finite element methods, conservation laws, dispersive PDEs,
-            mathematical biology, dynamical systems, verification </li>
-        <li>Advisor: <a href="https://people.tamu.edu/~guermond/">Dr.
-                Jean-Luc Guermond</a> </li>
-    </ul>
+        <!-- About -->
+        <section class="card">
+            <h2>About</h2>
+            <ul>
+                <li>Year: Sixth</li>
+                <li>Research Interests: Numerical Analysis, finite element methods, conservation laws, dispersive PDEs,
+                    mathematical biology, dynamical systems, verification</li>
+                <li>Advisor: <a href="https://people.tamu.edu/~guermond/" target="_blank" rel="noopener">Dr. Jean-Luc
+                        Guermond</a></li>
+            </ul>
+        </section>
 
-    <h2>Biography:</h2>
-    <p>I was born in Wyoming and was raised across the border in Sturgis South Dakota. In high school, I was active in
-        music, theather, speech and debate, and Boy Scouts. After high school, I took a gap year and worked in the
-        Senate as an intern in Washington D.C. I worked for Senators John Thune (SD) and Steve Daines (MT). I then
-        attended the University of South Dakota (Go Yotes!) where I double majored in mathematics and philosophy. Now I
-        am a Ph.D. student in mathematics at Texas&nbsp;A&amp;M&nbsp;University under the supervision of Dr. Jean-Luc
-        Guermond. My life's passion is solving problems with logic and reason, and I think mathematics is one of best
-        ways of doing so.</p>
+        <!-- Biography -->
+        <section class="card">
+            <h2>Biography</h2>
+            <p>
+                I was born in Wyoming and raised in Sturgis, South Dakota. In high school, I was active in music,
+                theater, speech and debate, and Boy Scouts. After high school, I took a gap year and worked as an intern
+                in the U.S. Senate for Senators John Thune (SD) and Steve Daines (MT).
+                I then attended the University of South Dakota, double-majoring in Mathematics and Philosophy.
+                Currently, I am pursuing a Ph.D. in Mathematics at Texas A&M University under Dr. Jean-Luc Guermond.
+                My passion is solving problems with logic and reason, and I consider mathematics one of the best ways to
+                do so.
+            </p>
+        </section>
 
-    <h2>Hobbies:</h2>
-    <p>
-        <li>Reading</li>
-        <li>Writing</li>
-        <li>Rock climbing (bouldering specifically)</li>
-        <li>Chess</li>
-    </p>
+        <!-- Hobbies -->
+        <section class="card">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Writing</li>
+                <li>Rock climbing (bouldering)</li>
+                <li>Chess</li>
+            </ul>
+        </section>
 
-    <h2>Contact</h2>
-    <ul>
-        <li>
-            Email: <a href="mailto:gerbeset1997@tamu.edu">gerbeset1997@tamu.edu</a>
-        </li>
-    </ul>
+        <!-- Contact -->
+        <section class="card">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="mailto:gerbeset1997@tamu.edu">gerbeset1997@tamu.edu</a></li>
+            </ul>
+        </section>
 
-    <footer>
-        <p id="footnote"> Website last updated: January 2026.</p>
-    </footer>
+        <!-- Footnote -->
+        <footer>
+            <p id="footnote">Website last updated: January 2026.</p>
+        </footer>
+
+    </div>
 
 </body>
-
 
 </html>

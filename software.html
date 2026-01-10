@@ -1,35 +1,70 @@
 <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Independent Software & Codes | Seth Gerberding</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="selected_works.html">Selected Works</a></li>
-            <li> <a href="software.html">Software & Codes</a></li>
-            <li> <a href="for_professionals.html">For Employers</a></li>
-            <li> <a href="writings.html">Wrtings, Language, and Literature</a></li>
-        </ul>
+
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html">Home</a>
+            <a href="selected_works.html">Research</a>
+            <a href="software.html">Software</a>
+            <a href="writings.html">Writings, Language, and Literature</a>
+            <a href="for_professionals.html">For Professionals</a>
+        </div>
     </nav>
 
-    <h1>Independent Software & Codes </h1>
-    <h2>Here is a collection of software and codes that I have written independently (i.e., not as part of a
-        collaborative code base).</h2>
+    <div class="container">
 
-    <h2>
-        Finite Element Codes:<sup><a href="#footnote">1</a></sup>
-    </h2>
-    <ul>
-        <li> Korteweg de-Vries Equation (first order):<a href="https://github.com/Gerbeset/kdv_first_order">github</a>
-        </li>
-        <li> Airy equation (low and high order):<a href="https://github.com/Gerbeset/KdV">github</a> (Note: I am aware
-            the
-            repo is called KDV; it solves the third-order Airy equation.)</li>
-    </ul>
+        <h1>Independent Software & Codes</h1>
 
-    <footer>
-        <p id="footnote"> Note that many of these codes require the <em>deal.II</em> finite element library. This
-            library can be found <a href="https://www.dealii.org/">here</a>. Additionally, these repos may be private;
-            if you would like access, please feel free to email me and I'd be happy to get you the code.</p>
-    </footer>
+        <p>
+            A curated list of software and codes that I have written independently (i.e., not as part of
+            a collaborative codebase). These are intended for researchers or developers interested
+            in numerical methods and finite element implementations.
+        </p>
+
+        <section>
+            <h2>Finite Element Codes<sup><a href="#footnote">1</a></sup></h2>
+            <ul>
+                <li>
+                    <strong>Korteweg–de Vries Equation (first-order)</strong> —
+                    <a href="https://github.com/Gerbeset/kdv_first_order" target="_blank" rel="noopener">GitHub</a>
+                </li>
+                <li>
+                    <strong>Airy Equation (low- and high-order)</strong> —
+                    <a href="https://github.com/Gerbeset/KdV" target="_blank" rel="noopener">GitHub</a>
+                    <br>
+                    <em>Note:</em> Repository is named “KDV” but implements the third-order Airy equation.
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p id="footnote">
+                Note that many of these codes require the <em>deal.II</em> finite element library, which can be found
+                <a href="https://www.dealii.org/" target="_blank" rel="noopener">here</a>. Some repositories may be
+                private;
+                if you would like access, please email me and I will provide it.
+            </p>
+        </footer>
+
+    </div>
 
 </body>
+
+</html>

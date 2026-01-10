@@ -1,62 +1,130 @@
 <!DOCTYPE html>
-<nav>
-    <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="selected_works.html">Selected Works</a></li>
-        <li> <a href="software.html">Software & Codes</a></li>
-        <li> <a href="for_professionals.html">For Employers</a></li>
-        <li> <a href="writings.html">Wrtings, Language, and Literature</a></li>
-    </ul>
-</nav>
+<html lang="en">
 
-<p>
-    Welcome to the professional resources page! Here you can find my CV as well as open-source projects that I have
-    contributed to. If you are an employer or a collaborator looking to learn more about my professional experience and
-    skills, this is the place to be.
-</p>
+<head>
+    <meta charset="UTF-8">
+    <title>Professional Resources | Seth Gerberding</title>
 
-<h2>Seth's Professional Resources</h2>
-<ul>
-    <li>Complete CV of academic and professional career: online version available <a href="cv.html"> here</a> and a PDF
-        here: <a href="resources/SGerberding_CV_Jan_2026.pdf">SGerberding_CV_Jan_2026</a>.</li>
-</ul>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
 
-<h2>Open-source Projects I've contributed to:</h2>
-<ul>
-    <li>
-        <strong>Ryujin</strong> — A high-performance, high-order collocation-type finite element solver
-        for conservation laws, including the compressible Navier–Stokes and Euler equations.
-        (<a href="https://github.com/conservation-laws/ryujin" target="_blank" rel="noopener">GitHub</a>)
-        <ul>
-            <li>Implemented implicit-explicit (IMEX) method for the Korteweg de-Vries equation. Included implementing
-                high-order time integration
-                techniques, discrete dispersive operators, and test problems. See "A High-Order IMEX Method for
-                Generalized Korteweg–De Vries Equations" on my <a href="selected_works.html">list of
-                    publications</a> for theoretical details. </li>
-            <li>Implemented implicit-explicit (IMEX) for the Serre-Green-Naghdi equaitons. Included implementing a
-                parallelized,
-                matrix-free elliptic solver which used a geometric multi-grid preconditioner, hyperbolic flux, and test
-                cases. In the process of a writing a paper for this project. </li>
-            <li>Implemented methods for the Korteweg de-Vries equation and the Serre-Green-Naghdi equations. (Note that
-                these methods may not available in the release version; contact the developers or myself if you desire
-                access to the code.)</li>
-        </ul>
-    </li>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <li>
-        <strong>ExactPack</strong> — An open-source verification and validation library for generating
-        exact and semi-analytic solutions to benchmark problems in computational physics
-        (LA-CC-14-047, C23033).
-        (<a href="https://github.com/lanl/ExactPack" target="_blank" rel="noopener">GitHub</a>)
-        <ul>
-            <li>Developed semi-analytic solutions agnostic to the equation of state and other problem parameters for the
-                Noh Problem.</li>
-            <li>Integrated new solvers into the existing ExactPack framework (see <a
-                    href="https://github.com/lanl/ExactPack/tree/master/exactpack/solvers/nohblackboxeos">nohblackboxeos</a>)
-            </li>
-            <li>Authored technical reports and a peer-reivew article; see my <a href="selected_works.html">list of
-                    publications</a>, specifically "Semi-Analytic Solutions to the Noh Problem with a Black Box Equation
-                of State."</li>
-        </ul>
-    </li>
-</ul>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html">Home</a>
+            <a href="selected_works.html">Research</a>
+            <a href="software.html">Software</a>
+            <a href="writings.html">Writings, Language, and Literature</a>
+            <a href="for_professionals.html">For Professionals</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>Professional Resources</h1>
+
+        <p>
+            This page collects materials relevant to my professional and academic work,
+            including my curriculum vitae and selected open-source software projects to
+            which I have contributed. It is intended for potential collaborators,
+            employers, and others interested in my technical background.
+        </p>
+
+        <section>
+            <h2>Curriculum Vitae</h2>
+            <ul>
+                <li>
+                    Complete academic and professional CV:
+                    <a href="cv.html">online version</a> or
+                    <a href="resources/SGerberding_CV_Jan_2026.pdf">PDF (January 2026)</a>.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Open-Source Contributions</h2>
+
+            <div class="card">
+                <h3>Ryujin</h3>
+                <p>
+                    A high-performance, high-order collocation-type finite element solver
+                    for conservation laws, including the compressible Euler and
+                    Navier–Stokes equations.
+                    (<a href="https://github.com/conservation-laws/ryujin" target="_blank" rel="noopener">GitHub</a>)
+                </p>
+
+                <ul>
+                    <li>
+                        Implemented implicit–explicit (IMEX) methods for the
+                        Korteweg–de Vries equation, including high-order time integration,
+                        discrete dispersive operators, and verification test problems.
+                        See <em>“A High-Order IMEX Method for Generalized Korteweg–De Vries
+                            Equations”</em> in my
+                        <a href="selected_works.html">list of publications</a>.
+                    </li>
+
+                    <li>
+                        Implemented IMEX methods for the Serre–Green–Naghdi equations,
+                        including a parallel, matrix-free elliptic solver using geometric
+                        multigrid preconditioning, hyperbolic fluxes, and benchmark test
+                        cases. A manuscript describing this work is in preparation.
+                    </li>
+
+                    <li>
+                        Developed additional numerical methods for the Korteweg–de Vries
+                        and Serre–Green–Naghdi equations. (Some methods are not available
+                        in the public release; contact the developers or myself for access.)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>ExactPack</h3>
+                <p>
+                    An open-source verification and validation library for generating exact
+                    and semi-analytic solutions to benchmark problems in computational
+                    physics (LA-CC-14-047, C23033).
+                    (<a href="https://github.com/lanl/ExactPack" target="_blank" rel="noopener">GitHub</a>)
+                </p>
+
+                <ul>
+                    <li>
+                        Developed semi-analytic solutions to the Noh problem that are
+                        agnostic to the equation of state and other problem parameters.
+                    </li>
+
+                    <li>
+                        Integrated new solvers into the ExactPack framework
+                        (see <a href="https://github.com/lanl/ExactPack/tree/master/exactpack/solvers/nohblackboxeos"
+                            target="_blank" rel="noopener">nohblackboxeos</a>).
+                    </li>
+
+                    <li>
+                        Authored technical reports and a peer-reviewed article; see
+                        <em>“Semi-Analytic Solutions to the Noh Problem with a Black Box
+                            Equation of State”</em> in my
+                        <a href="selected_works.html">list of publications</a>.
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        © Seth Gerberding
+    </footer>
+
+</body>
+
+</html>

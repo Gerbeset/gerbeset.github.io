@@ -49,5 +49,121 @@ h3 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  max-width: 850px;
+  margin: auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* ---------- Navigation ---------- */
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+  max-width: 900px;
+  margin: auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar a {
+  color: var(--text);
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Header / Profile ---------- */
+
+.profile {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.profile .title {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+/* ---------- Sections ---------- */
+
+section {
+  margin-top: 3rem;
+}
+
+section h2 {
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+/* ---------- Lists ---------- */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Cards (Optional) ---------- */
+
+.card {
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ---------- Inline Images ---------- */
+
+.inline-photo {
+  display: block;
+  max-width: 100%;
+  margin: 2.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
